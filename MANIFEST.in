@@ -1,2 +1,2 @@
-recursive-include AnalysisCLI *
+recursive-include analysis_cli *
 include analysis_cli/{{cookiecutter.project_name}}/*
