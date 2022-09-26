@@ -6,7 +6,8 @@ from cookiecutter.main import cookiecutter
 
 def cutter(wp, analysis, output_dir="."):
 
-    init_loc = resources.path(__package__, '__init__.py')
+    with resources.path(__package__, '__init__.py') as p:
+        init_loc = p
     folder, _ = os.path.split(init_loc)
 
     print(f"Folder is: {folder}")
