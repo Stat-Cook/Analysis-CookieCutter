@@ -10,9 +10,6 @@ def cutter(wp, analysis, output_dir="."):
         init_loc = p
     folder, _ = os.path.split(init_loc)
 
-    print(f"Folder is: {folder}")
-    print(folder)
-
     prefix = f"5.{wp + 1}.{analysis + 2}"
     project_name = f"{prefix} Analysis {analysis}"
 
